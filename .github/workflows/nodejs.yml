@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: npm install and build webpack
+      - uses: actions/upload-artifact@master
         run: |
           npm install
           npm run build
